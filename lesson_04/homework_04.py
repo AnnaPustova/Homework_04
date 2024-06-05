@@ -21,7 +21,7 @@ rolling in wealth."""
 
 ##  ПЕРЕЗАПИСУЙТЕ зміст змінної adwentures_of_tom_sawer у завданнях 1-3
 
-
+#task_01
 """ Дані у строці adwentures_of_tom_sawer розбиті випадковим чином, через помилку.
 треба замінити кінець абзацу на пробіл .replace("\n", " ")"""
 
@@ -29,23 +29,27 @@ task_01 = adwentures_of_tom_sawer.replace("\n", " ")
 
 print("1) ", task_01)
 
+#task_02
 """ Замініть .... на пробіл
 """
 task_02 = adwentures_of_tom_sawer.replace("....", " ")
 
 print("2) ", task_02)
 
+#task_03
 """ Зробіть так, щоб у тексті було не більше одного пробілу між словами.
 """
 task_03 = ' '.join(adwentures_of_tom_sawer.split())
 
 print("3) ", task_03)
+
 # task 04
 """ Виведіть, скількі разів у тексті зустрічається літера "h"
 """
 task_04 = adwentures_of_tom_sawer.count("h")
 
 print("4) ", task_04)
+
 # task 05
 """ Виведіть, скільки слів у тексті починається з Великої літери?
 """
@@ -68,10 +72,10 @@ print("6) ", second_occurrence)
 """ Розділіть змінну adwentures_of_tom_sawer по кінцю речення.
 Збережіть результат у змінній adwentures_of_tom_sawer_sentences
 """
-#понятие не имею как это решить)
 
-adwentures_of_tom_sawer_sentences= adwentures_of_tom_sawer.split(".")
-print("7) ",adwentures_of_tom_sawer_sentences)
+adwentures_of_tom_sawer_sentences = adwentures_of_tom_sawer.split(". ")
+print("7) ", adwentures_of_tom_sawer_sentences)
+
 # task 08
 """ Виведіть четверте речення з adwentures_of_tom_sawer_sentences.
 Перетворіть рядок у нижній регістр.
@@ -80,6 +84,7 @@ print("7) ",adwentures_of_tom_sawer_sentences)
 task_08 = adwentures_of_tom_sawer_sentences[3].strip().lower()
 
 print("8) ", task_08)
+
 # task 09
 """ Перевірте чи починається якесь речення з "By the time".
 """
@@ -91,6 +96,7 @@ for sentence in adwentures_of_tom_sawer_sentences:
 # task 10
 """ Виведіть кількість слів останнього речення з adwentures_of_tom_sawer_sentences.
 """
+
 last_sentence_words = adwentures_of_tom_sawer_sentences[-1].split()
 
 num_words_last_sentence = len(last_sentence_words)
